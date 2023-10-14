@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <nav>
+        <ul class="sidebar">
+
+            <li onclick="hideSidebar()"><a href="#">
+                    <ion-icon name="close-outline"></ion-icon>
+                </a></li>
+            <li><a href="#">product</a></li>
+            <li><a href="#">docs</a></li>
+            <li><a href="#">pricing</a></li>
+            <li><a href="#">resoucses</a></li>
+            <li><a href="#">book and demo</a></li>
+            <li><a href="login/login.html">login</a></li>
+
+        </ul>
+        <ul>
+            <li><a href="#">logo</a></li>
+            <li class="hideonmobile"><a href="#">product</a></li>
+            <li class="hideonmobile"><a href="#">docs</a></li>
+            <li class="hideonmobile"><a href="#">pricing</a></li>
+            <li class="hideonmobile"><a href="#">resoucses</a></li>
+            <li class="hideonmobile"><a href="#">book and demo</a></li>
+            <li class="hideonmobile"><a href="login/login.html">login</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </a></li>
+        </ul>
+    </nav>
+
+    <div class="head">
+        <div class="txt1">
+            <h2> <strong> safe and secure </strong> authentication in <br>  just seconds</h2>
+        </div>
+        <div>
+            <p>use out api to build seamless web experences for mobile and <br> web by utilising their built-in
+                biometrics</p>
+            <button><a href="#">get started </a></button>
+        </div>
+    </div>
+
+
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar() {
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
